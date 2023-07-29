@@ -12,10 +12,10 @@ jobs:
 
             steps:
                 - name: Revisar el repo
-                  uses: actions/checkout@v2
+                  uses: actions/checkout@v2 
                 
-                - name: Install Pandas
-                  run: pip install pandas
+                - name: Install libs
+                  run: pip install -r requirements.txt
                 
                 - name: Ejecutar codigo python
                   run: python3 app.py 
