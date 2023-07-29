@@ -11,5 +11,8 @@ jobs:
             runs-on: ubuntu-latest
 
             steps:
-                - name: Imprimir hola mundo
-                  run: echo "Hola mundo"
+                - name: Revisar el repo
+                  uses: actions/checkout@v2
+                
+                - name: Ejecutar codigo python
+                  uses: python3 app.py 
